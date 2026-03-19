@@ -1,0 +1,5 @@
+{
+  "name": "Guitar Tab Generator",
+  "description": "Generate guitar chords, tabs, and lyrics for any song.",
+  "requestFramePermissions": ["microphone"]
+}
