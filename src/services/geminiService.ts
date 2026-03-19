@@ -1,7 +1,7 @@
-import { GoogleGenerativeAI, Type } from '@google/generative-ai';
+import { GoogleGenAI, Type } from '@google/genai';
 import { SongData } from '../types';
 
-const ai = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 function parseChordPro(content: string): string {
   const lines = content.split('\n');
